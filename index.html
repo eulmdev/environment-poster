@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  
+
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,6 +39,7 @@
   <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
     :root {
       --bg-light: #222;
@@ -46,6 +47,7 @@
       --bg-dark: #000;
 
       --font-title: "Urbanist", sans-serif;
+      --font-main: "Lato", sans-serif;
 
       --text-main: #eee;
     }
@@ -65,6 +67,9 @@
       align-items: center;
 
       color: var(--text-main);
+      font-family: var(--font-main);
+      font-weight: 400;
+      font-size: 18px;
     }
 
     .wrapper {
@@ -81,7 +86,7 @@
       justify-content: center;
       align-items: center;
     }
-    
+
     .title {
       text-align: center;
 
@@ -96,8 +101,23 @@
       background: var(--bg-light);
       border-radius: 3em;
 
+      padding: 30px;
+
       width: 100%;
-      height: calc(100% - 12em);
+      height: calc(100% - 5em);
+    }
+
+    .btn {
+      background: var(--bg-dark);
+      border-radius: 12px;
+      
+      border: none;
+      padding: 8px 12px;
+      
+      color: var(--text-main);
+      font-family: var(--font-main);
+      font-weight: 400;
+      font-size: 18px;
     }
 
     @media (max-width: 94em) {
@@ -105,7 +125,7 @@
         max-height: 54em;
       }
     }
-    
+
     @media (max-width: 68em) {
       .wrapper {
         width: 100%;
@@ -113,7 +133,7 @@
         max-width: unset;
         max-height: unset;
       }
-      
+
       .title {
         height: 10%;
 
@@ -139,7 +159,22 @@
       <h1 class="title">Environment</h1>
     </div>
 
-    <div class="card"></div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Earth_Western_Hemisphere_transparent_background.png/1200px-Earth_Western_Hemisphere_transparent_background.png" alt="Image of the Earth" width="26%" style="float:right" />
+      
+      <p>Our oceans are dying.</p>
+      <p>So are our forests.</p>
+      <p>The natural world suffers from our advancements.</p>
+
+      <hr height="1px" width="70%" style="float: left" />
+      <br />
+
+      <h3>Fight the climate crisis.</h3>
+
+      <p>Donate to the Cool Earth to help their mission against it.</p>
+
+      <button onmousedown="window.open('https://www.coolearth.org/act-now/ways-to-donate/?form=uk-donate', '_blank')" class="btn">Donate Now</button>
+    </div>
 
   </div>
 
